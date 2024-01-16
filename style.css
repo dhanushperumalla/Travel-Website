@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* banner - Section */
+
+.banner {
+    width: 100%;
+    height: 90vh;
+    /* background-color: grey; */
+    background: url("./images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    /* background-color: rgba(128, 128, 128, 0.557); */
+    padding: 0px 15%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    /* position: fixed; */
+
+}
+
+.logo {
+    width: 10%;
+    /* background-color: yellow; */
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo-text {
+    width: 80%;
+    font-family: 'poppins';
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 2px 10px;
+
+}
+
+.nav {
+    width: 45%;
+    height: 70px;
+    /* position: fixed; */
+    /* background-color: orange; */
+}
+
+.nav-links {
+    width: 100%;
+    height: 70px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: yellow; */
+    font-family: 'poppins';
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-link {
+    transition: .3s;
+}
+
+.nav-link:hover {
+    box-shadow: 1px 1px 7px black;
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.banner-details {
+    width: 100%;
+    /* background-color: white; */
+    padding: 20px 15%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.badge {
+    width: max-content;
+    padding: 10px 20px;
+    background-color: rgb(172, 172, 172);
+    font-family: 'poppins';
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px black;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.badge:hover {
+    background-color: rgb(255, 253, 253);
+}
+
+.banner-heading {
+    font-size: 85px;
+    font-family: 'poppins';
+    color: white;
+    text-shadow: 1px 1px 7px black;
+}
+
+.btn {
+    padding: 18px 30px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px black;
+    transition: .3s;
+}
+
+/* .btn:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+} */
+
+.booking {
+    width: 100%;
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.425);
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    border-radius: 5px;
+}
+
+.inp {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'poppins';
+    row-gap: 5px;
+    justify-content: flex-start;
+}
+
+input:focus {
+    outline: none;
+}
+
+input {
+    height: 40px;
+    font-size: 15px;
+    text-indent: 5px;
+    border-radius: 5px;
+}
+
+.book-btn {
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.about {
+    width: 100%;
+    padding: 50px 15%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'poppins';
+    font-weight: 200px;
+    font-size: 30px;
+    word-spacing: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+
+}
+
+.highlight {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.icon {
+    font-size: 45px;
+}
+
+.rooms {
+    width: 100%;
+    /* height: 100vh; */
+    padding: 50px 15%;
+    /* background-color: bisque; */
+    font-family: 'poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-tittle {
+    font-size: 30px;
+}
+
+.rooms-area {
+    width: 100%;
+    padding: 20px 0px;
+    /* background-color: red; */
+    margin-top: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5%;
+    row-gap: 50px;
+}
+
+.room {
+    width: 30%;
+    /* height: 500px; */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid black;
+
+}
+
+.room:hover {
+    box-shadow: 1px 1px 5px black;
+}
+
+.room-img {
+    width: 100%;
+    height: 300px;
+    /* background-color: yellow; */
+    overflow: hidden;
+    /* transition: .3s; */
+}
+
+/* .room-img:hover {
+    transform: scale(1.5);
+} */
+
+.room-img>img {
+    width: 100%;
+}
+
+.room-btn {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.room-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+}
+
+.rm {
+    margin-top: -100px;
+}
+
+.subscribe {
+    width: 100%;
+    padding: 50px 15%;
+    background-color: #cfcfcf57;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-text {
+    width: 30%;
+    padding: 20px 0px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    font-family: 'poppins';
+}
+
+.sub-desc {
+    padding: 0px 25px;
+    font-size: 15px;
+}
+
+.logo2 {
+    width: 50%;
+    /* background-color: yellow; */
+}
+
+.sub-area {
+    width: 35%;
+    padding: 20px;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.sub-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-inp {
+    width: 70%;
+    height: 60px;
+}
+
+.sub-area>h1 {
+    font-family: 'poppins';
+}
+
+.food {
+    width: 100%;
+    height: 100vh;
+    padding: 50px 15%;
+    background-color: rgb(255, 255, 255);
+    background: url('./images/restaurant.jpg');
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.food-details {
+    width: 70%;
+    padding: 50px;
+    /* background-color: red; */
+    font-family: 'poppins';
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.section-header {
+    font-size: 45px;
+}
+
+.premium {
+    width: 100%;
+    padding: 30px 15%;
+    background-color: #f8f8f8;
+    font-family: 'poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prooms-area {
+    width: 100%;
+    height: 1000px;
+    /* background-color: green; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.proom-img {
+    width: 30%;
+    height: 1000px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1px 1px 7px black;
+    /* background-color: yellow; */
+}
+
+.proom-img>img {
+    width: 100%;
+    height: 100%;
+}
+
+.proom-boxes {
+    width: 65%;
+    height: 1000px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.proom-box {
+    width: 100%;
+    padding: 20px;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.proom-box:hover {
+    box-shadow: 1px 1px 7px black;
+}
+
+.gallery {
+    width: 100%;
+    padding: 30px 15%;
+    background-color: rgb(117, 117, 117);
+}
+
+.gallery-img {
+    width: 30%;
+}
+
+.footer {
+    width: 100%;
+    padding: 30px 15%;
+    font-family: 'poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    background-color: greenyellow;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px 10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
